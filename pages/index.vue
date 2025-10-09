@@ -34,16 +34,16 @@
       </header>
 
       <!-- Main Content Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4">
-        <!-- Theme Controls - Left Sidebar -->
-        <div class="lg:col-span-3 order-1">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4">
+        <!-- Theme Controls - Left Section -->
+        <div class="order-1">
           <ThemeControls />
         </div>
 
-        <!-- Preview Area - Center -->
-        <div class="lg:col-span-5 order-3 lg:order-2">
+        <!-- Preview Area - Center Section -->
+        <div class="order-3 lg:order-2">
           <div
-            class="glass-effect rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[320px] sm:min-h-[360px] shadow-xl"
+            class="glass-effect rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[500px] shadow-xl"
           >
             <div
               class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-3 gap-1.5"
@@ -98,7 +98,7 @@
 
             <!-- Preview Container -->
             <div
-              class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 min-h-[240px] sm:min-h-[280px] flex items-center justify-center overflow-x-auto shadow-2xl border-2 border-white/60"
+              class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 min-h-[350px] flex items-center justify-center overflow-x-auto shadow-2xl border-2 border-white/60"
               style="background-image: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);"
             >
               <PreviewCard v-if="component === 'card'" />
@@ -108,8 +108,8 @@
           </div>
         </div>
 
-        <!-- Code Display - Right Sidebar -->
-        <div class="lg:col-span-4 order-2 lg:order-3">
+        <!-- Code Display - Right Section -->
+        <div class="order-2 lg:order-3">
           <CodeDisplay />
         </div>
       </div>
