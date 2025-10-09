@@ -17,7 +17,7 @@
             type="color"
             :value="theme.primary"
             @input="(e) => handleColorInput('primary', e)"
-            class="w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
+            class="color-input w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
           />
           <input
             type="text"
@@ -38,7 +38,7 @@
             type="color"
             :value="theme.accent"
             @input="(e) => handleColorInput('accent', e)"
-            class="w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
+            class="color-input w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
           />
           <input
             type="text"
@@ -59,7 +59,7 @@
             type="color"
             :value="theme.bg"
             @input="(e) => handleColorInput('bg', e)"
-            class="w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
+            class="color-input w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
           />
           <input
             type="text"
@@ -80,7 +80,7 @@
             type="color"
             :value="theme.text"
             @input="(e) => handleColorInput('text', e)"
-            class="w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
+            class="color-input w-full h-10 sm:h-11 rounded-lg cursor-pointer border-2 border-cyan-500/30 hover:border-cyan-400 transition-colors shadow-sm"
           />
           <input
             type="text"
@@ -94,7 +94,7 @@
 
     <!-- Font Selector -->
     <div class="mt-2.5 sm:mt-3">
-      <label class="block text-[10px] sm:text-xs font-semibold text-gray-800 mb-1">
+      <label class="block text-[10px] sm:text-xs font-semibold text-cyan-100 mb-1">
         <Icon name="ph:text-t-fill" class="inline" />
         Font Family
       </label>
@@ -148,3 +148,26 @@ const handleFontChange = (event: Event) => {
   updateFont(target.value)
 }
 </script>
+
+<style scoped>
+.color-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 0.5rem; 
+}
+.color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.5rem;
+}
+.color-input::-moz-color-swatch {
+  border: none;
+  border-radius: 0.5rem;
+}
+</style>

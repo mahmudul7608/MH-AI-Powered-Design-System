@@ -20,7 +20,7 @@
 
     <div class="relative flex-1 flex flex-col">
       <pre
-        class="bg-slate-900/60 text-cyan-100 p-2 sm:p-3 rounded-lg text-[9px] sm:text-[10px] overflow-x-auto flex-1 overflow-y-auto font-mono leading-relaxed border border-cyan-500/20"
+        class="bg-slate-900/60 text-cyan-100 p-2 sm:p-3 rounded-lg text-[9px] sm:text-[10px] flex-1 overflow-y-auto font-mono leading-relaxed border border-cyan-500/20 whitespace-pre-wrap break-words"
       ><code>{{ generatedCode }}</code></pre>
 
       <button

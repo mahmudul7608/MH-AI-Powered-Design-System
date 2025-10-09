@@ -34,16 +34,16 @@
       </header>
 
       <!-- Main Content Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 lg:items-stretch">
         <!-- Theme Controls - Left Section -->
-        <div class="order-1">
+        <div class="order-1 h-full">
           <ThemeControls />
         </div>
 
         <!-- Preview Area - Center Section -->
-        <div class="order-3 lg:order-2">
+        <div class="order-3 lg:order-2 h-full">
           <div
-            class="glass-effect rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[500px] shadow-xl"
+            class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[500px] shadow-2xl border border-cyan-500/30 h-full flex flex-col"
           >
             <div
               class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-3 gap-1.5"
@@ -51,20 +51,20 @@
               <div class="flex items-center gap-1.5">
                 <Icon
                   name="ph:eye-bold"
-                  class="text-purple-600 text-base sm:text-lg drop-shadow"
+                  class="text-cyan-400 text-base sm:text-lg drop-shadow"
                 />
-                <h2 class="text-base sm:text-lg font-bold text-gray-900">
+                <h2 class="text-base sm:text-lg font-bold text-white">
                   Live Preview
                 </h2>
               </div>
-              <div class="text-[10px] sm:text-xs text-gray-700 font-semibold">
-                Font: <span class="text-purple-600">{{ theme.font }}</span>
+              <div class="text-[10px] sm:text-xs text-cyan-100 font-semibold">
+                Font: <span class="text-cyan-400">{{ theme.font }}</span>
               </div>
             </div>
 
             <!-- Component Selector Tabs -->
             <div
-              class="flex gap-1 sm:gap-1.5 mb-3 p-1 bg-gray-100/80 rounded-lg shadow-inner"
+              class="flex gap-1 sm:gap-1.5 mb-3 p-1 bg-slate-900/50 rounded-lg shadow-inner border border-cyan-500/20"
             >
               <button
                 v-for="comp in components"
@@ -73,8 +73,8 @@
                 :class="[
                   'flex-1 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-semibold text-[10px] sm:text-xs transition-all duration-200',
                   component === comp
-                    ? 'bg-white text-purple-600 shadow-lg'
-                    : 'text-gray-700 hover:text-gray-900 hover:bg-white/50',
+                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-md'
+                    : 'text-cyan-100 hover:bg-slate-700/50 hover:text-white',
                 ]"
               >
                 <Icon
@@ -87,19 +87,15 @@
                   "
                   class="inline mr-0.5 sm:mr-1 text-xs sm:text-sm"
                 />
-                <span class="hidden xs:inline">{{
+                <span>{{
                   comp.charAt(0).toUpperCase() + comp.slice(1)
-                }}</span>
-                <span class="xs:hidden">{{
-                  comp.charAt(0).toUpperCase()
                 }}</span>
               </button>
             </div>
 
             <!-- Preview Container -->
             <div
-              class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 min-h-[350px] flex items-center justify-center overflow-x-auto shadow-2xl border-2 border-white/60"
-              style="background-image: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);"
+              class="bg-slate-900/50 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 flex-grow flex items-center justify-center overflow-x-auto shadow-inner border border-cyan-500/20"
             >
               <PreviewCard v-if="component === 'card'" />
               <PreviewButton v-if="component === 'button'" />
@@ -109,7 +105,7 @@
         </div>
 
         <!-- Code Display - Right Section -->
-        <div class="order-2 lg:order-3">
+        <div class="order-2 lg:order-3 h-full">
           <CodeDisplay />
         </div>
       </div>
