@@ -113,18 +113,18 @@
       <!-- Footer Info -->
       <div class="mt-3 sm:mt-4 text-center">
         <div
-          class="glass-effect rounded-lg sm:rounded-xl p-2.5 sm:p-3 shadow-lg"
+          class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-cyan-500/30"
         >
-          <div class="flex items-start gap-1.5 sm:gap-2 text-left">
+          <div class="flex items-center gap-2 text-left">
             <Icon
               name="ph:lightbulb-fill"
-              class="text-yellow-500 text-base sm:text-lg flex-shrink-0 mt-0.5 drop-shadow"
+              class="text-yellow-400 text-lg flex-shrink-0 drop-shadow"
             />
             <div>
-              <h3 class="font-semibold text-gray-900 mb-0.5 text-xs sm:text-sm">
+              <h3 class="font-semibold text-white mb-0.5 text-sm">
                 Pro Tip
               </h3>
-              <p class="text-[10px] sm:text-xs text-gray-700 font-medium">
+              <p class="text-xs text-cyan-200/80 font-medium">
                 Copy the generated code and paste it anywhere! Inline styles
                 included for maximum portability.
               </p>
