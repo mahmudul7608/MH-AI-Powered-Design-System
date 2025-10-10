@@ -34,16 +34,18 @@
       </header>
 
       <!-- Main Content Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 lg:items-stretch">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 lg:items-stretch"
+      >
         <!-- Theme Controls - Left Section -->
         <div class="order-1 h-full">
           <ThemeControls />
         </div>
 
         <!-- Preview Area - Center Section -->
-        <div class="order-3 lg:order-2 h-full">
+        <div class="order-3 lg:order-2 h-full flex flex-col">
           <div
-            class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[500px] shadow-2xl border border-cyan-500/30 h-full flex flex-col"
+            class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 shadow-2xl border border-cyan-500/30 h-full flex flex-col"
           >
             <div
               class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-3 gap-1.5"
@@ -87,9 +89,7 @@
                   "
                   class="inline mr-0.5 sm:mr-1 text-xs sm:text-sm"
                 />
-                <span>{{
-                  comp.charAt(0).toUpperCase() + comp.slice(1)
-                }}</span>
+                <span>{{ comp.charAt(0).toUpperCase() + comp.slice(1) }}</span>
               </button>
             </div>
 
@@ -137,21 +137,21 @@
 </template>
 
 <script setup lang="ts">
-const { theme, component, loadTheme, loadGoogleFont } = useTheme()
+const { theme, component, loadTheme, loadGoogleFont } = useTheme();
 
-const components = ['card', 'button', 'nav'] as const
+const components = ["card", "button", "nav"] as const;
 
 // Load theme from localStorage on mount
 onMounted(() => {
-  loadTheme()
-  loadGoogleFont()
-})
+  loadTheme();
+  loadGoogleFont();
+});
 
 // Watch for font changes and load new font
 watch(
   () => theme.value.font,
   () => {
-    loadGoogleFont()
+    loadGoogleFont();
   }
-)
+);
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[500px] shadow-2xl border border-cyan-500/30">
+  <div class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 shadow-2xl border border-cyan-500/30 h-full flex flex-col">
     <div class="flex items-center gap-1.5 mb-3">
       <Icon name="ph:palette-fill" class="text-cyan-400 text-base sm:text-lg drop-shadow" />
       <h2 class="text-sm sm:text-base font-bold text-white">Theme Controls</h2>

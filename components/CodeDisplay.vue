@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 min-h-[500px] shadow-2xl border border-cyan-500/30 flex flex-col"
+    class="bg-gradient-to-br from-slate-800/90 via-blue-900/80 to-slate-800/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 shadow-2xl border border-cyan-500/30 flex flex-col h-full"
   >
     <div
       class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-3 gap-1.5"
@@ -18,9 +18,9 @@
       </div>
     </div>
 
-    <div class="relative flex-1 flex flex-col">
+    <div class="relative flex-1 flex flex-col overflow-y-auto">
       <pre
-        class="bg-slate-900/60 text-cyan-100 p-2 sm:p-3 rounded-lg text-[9px] sm:text-[10px] flex-1 overflow-y-auto font-mono leading-relaxed border border-cyan-500/20 whitespace-pre-wrap break-words"
+        class="bg-slate-900/60 text-cyan-100 p-2 sm:p-3 rounded-lg text-[9px] sm:text-[10px] flex-1 font-mono leading-relaxed border border-cyan-500/20 whitespace-pre-wrap break-words"
       ><code>{{ generatedCode }}</code></pre>
 
       <button
