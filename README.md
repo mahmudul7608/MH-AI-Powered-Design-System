@@ -1,6 +1,11 @@
 # 🎨 AI-Powered Design System Previewer
 
+<img width="1903" height="869" alt="image" src="https://github.com/user-attachments/assets/a0a22c13-dccc-489e-98bd-630b1a95d036" />
+
+
 A modern, real-time design system generator built with **Nuxt 3** and **Tailwind CSS**. Create beautiful UI themes instantly and preview them live!
+
+live preview : https://mh-ai-powered-design.netlify.app/
 
 ## ✨ Features
 
