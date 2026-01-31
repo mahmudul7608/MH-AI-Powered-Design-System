@@ -88,4 +88,4 @@ Perfect for:
 - **Practical features** like code export and persistence
 - **Portfolio-ready** project that impresses recruiters
 
-Built with ❤️ using Nuxt 3 and Tailwind CSS
+Built with using Nuxt 3 and Tailwind CSS
