@@ -9,12 +9,12 @@ live preview : https://mh-ai-powered-design.netlify.app/
 
 ##  Features
 
--  **Real-time Color Palette Generator** - Pick colors and see instant updates
--  **Dynamic Font Selection** - Choose from popular Google Fonts
--  **Live Component Preview** - See Cards, Buttons, and Navigation bars in real-time
--  **Copy-to-Clipboard** - Export generated code instantly
--  **Theme Persistence** - Your themes are saved in localStorage
--  **Beautiful Gradient UI** - Modern, attractive interface with glass morphism effects
+-  **Real-time Color Palette Generator** :- Pick colors and see instant updates
+-  **Dynamic Font Selection** :- Choose from popular Google Fonts
+-  **Live Component Preview** :- See Cards, Buttons, and Navigation bars in real-time
+-  **Copy-to-Clipboard** :- Export generated code instantly
+-  **Theme Persistence** :- Your themes are saved in localStorage
+-  **Beautiful Gradient UI** :- Modern, attractive interface with glass morphism effects
 
 ##  Quick Start
 
